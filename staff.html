@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home|Smart Readers Liberia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <a href="index.html">
+        <img src="images/srl logo.jpg" alt="Smart Readers Liberia logo" class="logo">
+    </a>
+    <h1><strong>SMART REAEDERS LIBERIA, INC.</strong></h1>
+    <p><strong>“Inclusive Education for Lifelong Success”</strong></p>
+</header>
+<nav class="navbar">
+    <ul>
+        <li><a href="about.html">About </a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="values.html">Values</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="pre-registration.html">Pre-Register</a></li>
+        <li><a href="gallery.html"> Gallery</a></li>
+        <li><a href="staff.html">Team</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+</nav>
+<section id="staff">
+    <h2><strong>MEET OUR DEDICATED TEAM</strong></h2>
+    <p>At Smart Readers Liberia, Inc., our team of dedicated volunteers
+        are equiped with the requisite expertise to provide the needed
+        support to our program beneficiaries. 
+    </p>
+    <div class="staff-container">
+
+        <!-- STAFF CARDS -->
+        <div class="staff-card">
+            <img src="images/nel.jpg" alt="Mr. Nelson T. Sackie">
+            <h3>Mr. Nelson T. Sackie</h3>
+            <hr>
+            <h5>EXECUTIVE DIRECTOR</h5>
+            <button class="bio-btn" onclick="openModal('nelson')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/marcus.jpg" alt="Marcus H. Grigsby">
+            <h3>Marcus H. Grigsby</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('marcus')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/musu.jpg" alt="Ms. Musu N-Goe">
+            <h3>Ms. Musu N-Goe</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('musu')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/akaikei.jpg" alt="Akaikei B. Sackie">
+            <h3>Akaikei B. Sackie</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('akaikei')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/tarnue.jpg" alt="Tarnue S. Kpowu">
+            <h3>Tarnue S. Kpowu</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('tarnue')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/diamond.jpg" alt="Diamona M. Kerkulah">
+            <h3>Diamona M. Kerkulah</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('diamona')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/melody.jpg" alt="Melody G. Keamah">
+            <h3>Melody G. Keamah</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('melody')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/deborah.jpg" alt="Deborah K. Favor Flomo">
+            <h3>Deborah K. Favor Flomo</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('deborah')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/joseph.jpg" alt="Joseph Holder">
+            <h3>Joseph Holder</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('joseph')">Read Bio</button>
+        </div>
+
+        <div class="staff-card">
+            <img src="images/william.jpg" alt="William K. Bearlar">
+            <h3>William K. Bearlar</h3>
+            <hr>
+            <h5>VOLUNTEER</h5>
+            <button class="bio-btn" onclick="openModal('william')">Read Bio</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL -->
+<div id="bioModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3 id="modalName"></h3>
+        <p id="modalBio"></p>
+    </div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-col">
+            <h3>Smart Readers Liberia</h3>
+            <p>
+                We are committed to inclusive education and literacy development 
+                for children and adults across Liberia.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Our Programs</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p>Email: info@smartreadersliberia.org</p>
+            <p>Phone: +231 889-559-762</p>
+            <p>Monrovia, Liberia</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/SmartReadersLiberia" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/company/smartreadersliberia" target="_blank">LinkedIn</a>
+                <a href="https://www.youtube.com/@SmartReadersLiberiaInc" target="_blank">YouTube</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Smart Readers Liberia, Inc. | All Rights Reserved</p>
+    </div>
+
+</footer>
+    </body>
+</html>
+
+<!-- JAVASCRIPT FOR MODAL -->
+<script>
+const bios = {
+    nelson: {
+        name: "Mr. Nelson T. Sackie",
+        bio: "Mr. Nelson T. Sackie is the founder and Executive Director of Smart Readers Liberia Inc. Mr. Sackie is an educator, an Environmentalist, a Project Manager, and a Data Analyst. His passion for reading motivated him to have started this organization. He has led literacy initiatives focused on supporting struggling readers and strengthening teacher capacity across Liberia."
+    },
+    marcus: {
+        name: "Marcus H. Grigsby",
+        bio: "Marcus H. Grigsby serves as a committed volunteer supporting literacy development programs and community outreach."
+    },
+    musu: {
+        name: "Ms. Musu N-Goe",
+        bio: "Ms. Musu N-Goe contributes to learner engagement and academic mentoring programs."
+    },
+    akaikei: {
+        name: "Akaikei B. Sackie",
+        bio: "Akaikei B. Sackie supports administrative coordination and literacy programming activities."
+    },
+    tarnue: {
+        name: "Tarnue S. Kpowu",
+        bio: "Tarnue S. Kpowu volunteers in supporting literacy instruction and student mentoring."
+    },
+    diamona: {
+        name: "Diamona M. Kerkulah",
+        bio: "Diamona M. Kerkulah is passionate about community engagement and youth literacy empowerment."
+    },
+    melody: {
+        name: "Melody G. Keamah",
+        bio: "Melody G. Keamah supports educational outreach and volunteer coordination initiatives."
+    },
+    deborah: {
+        name: "Deborah Favor Flomo",
+        bio: "Deborah Favor Flomo contributes to program implementation and learner support services."
+    },
+    joseph: {
+        name: "Joseph Holder",
+        bio: "Joseph Holder volunteers in literacy training and community engagement efforts."
+    },
+    william: {
+        name: "William K. Bearlar",
+        bio: "William K. Bearlar supports literacy advocacy and youth empowerment programs."
+    }
+};
+
+function openModal(person) {
+    document.getElementById("modalName").innerText = bios[person].name;
+    document.getElementById("modalBio").innerText = bios[person].bio;
+    document.getElementById("bioModal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("bioModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("bioModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
