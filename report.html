@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="banner">
 
-        <!-- Banner Content -->
+    <!-- Banner -->
+    <header class="banner">
         <div class="banner-content">
             <!-- Logo + Organization Name -->
             <div class="top-left">
@@ -20,10 +20,12 @@
             <!-- Center Text -->
             <div class="center-text">
                 <h1>We Lead in Making Literacy Education Inclusive of All Learners</h1>
+            </div>
         </div>
     </header>
 
-    <nav class="navbar">
+    <!-- Navigation -->
+     <nav class="navbar">
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -39,33 +41,21 @@
         </ul>
     </nav>
 
-    <section id="about">
-        <h2><strong>GET TO KNOW ABOUT US!</strong></h2>
-        <hr>
-        <h2>Our Mission</h2>
-        <p>To provide inclusive literacy and academic support to children, youth, and adults across
-            Liberia, empowering them to become confident readers, lifelong learners, and active 
-            contributors to their communities.</p>
-        <h2>Our Vision</h2>
-        <p>A Liberia where every child, youth, and adult has access to quality literacy education and 
-            the opportunity to reach their full potential.</p>
-        <h2>Our Story</h2>
-        <p>Smart Readers Liberia, Inc. was founded in February 2021 by a passionate educator 
-            who recognized the urgent need for literacy support in Liberia. 
-            Starting as a small community reading group, we quickly grew into a formal organization 
-            dedicated to providing comprehensive literacy programs for learners of all ages. Our journey 
-            has been driven by a commitment to inclusive education and a belief that literacy is a 
-            fundamental right that can transform lives and communities. Today, we serve hundreds of 
-            learners across Liberia, helping them build strong reading skills, gain confidence, and 
-            achieve better educational outcomes. Our work is made possible by a dedicated team of 
-            staff and volunteers who share our vision for a more literate 
-            and empowered Liberia. <a href="programs.html" target="_blank">Learn more about our programs</a>
-        </p>
-    </section>
+    <!-- Page Content -->
+    <main>
+        <section class="reports-section">
+            <h1>Smart Readers Liberia - Reports</h1>
+            <p>Download the latest reports below:</p>
+<p><Strong>Note:</Strong> Reports not yet available. Please check back later.</p>
+            <div id="reports-list">
+                <!-- Reports will be generated here -->
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-
             <!-- About -->
             <div class="footer-col">
                 <h3>Smart Readers Liberia</h3>
@@ -79,7 +69,6 @@
             <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="programs.html">Our Programs</a></li>
                     <li><a href="volunteer.html">Volunteer</a></li>
@@ -87,13 +76,13 @@
                 </ul>
             </div>
 
-        <!-- Contact -->
-        <div class="footer-col">
-            <h3>Contact Us</h3>
-            <p>Email: smartreadersnet@gmail.com</p>
-            <p>Phone: +231 889-559-762 <br>Phone: +231 773-223-483</p>
-            <p>Monrovia, Liberia</p>
-        </div>
+            <!-- Contact -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: smartreadersnet@gmail.com</p>
+                <p>Phone: +231 889-559-762 <br>Phone: +231 773-223-483</p>
+                <p>Monrovia, Liberia</p>
+            </div>
 
             <!-- Social Media -->
             <div class="footer-col">
@@ -104,12 +93,38 @@
                     <a href="https://www.youtube.com/@SmartReadersLiberiaInc" target="_blank">YouTube</a>
                 </div>
             </div>
-
         </div>
 
         <div class="footer-bottom">
             <p>&copy; 2026 Smart Readers Liberia, Inc. | All Rights Reserved</p>
         </div>
     </footer>
+
+    <!-- JavaScript to generate reports list -->
+    <script>
+        const reports = [
+            { title: "Literacy Annual Report 2026", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_1" },
+            { title: "Annual Teacher Training Report", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_2" },
+            { title: "Annual Volunteer Impact Report", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_3" },
+            { title: "New Community Literacy Report", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_4" }
+        ];
+
+        const reportsList = document.getElementById('reports-list');
+
+        reports.forEach(report => {
+            const div = document.createElement('div');
+            div.classList.add('report-item');
+
+            const link = document.createElement('a');
+            link.href = report.url;
+            link.target = "_blank";
+            link.textContent = report.title + " - Download";
+            link.classList.add('download-btn');
+
+            div.appendChild(link);
+            reportsList.appendChild(div);
+        });
+    </script>
+
 </body>
 </html>
