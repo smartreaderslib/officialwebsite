@@ -23,21 +23,90 @@
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="values.html">Values</a></li>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="pre-registration.html">Pre-Register</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="staff.html">Team</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="partners.html">Our Partners</a></li>
-            <li><a href="report.html">Reports</a></li>
-            <li><a href="donate.html">Donate</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation -->
+<nav class="navbar">
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</div>
+<ul id="navMenu">
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+<li><a href="values.html">Our Core Values</a></li>
+
+
+
+<!-- Programs Menu -->
+
+<li class="has-submenu">
+
+<div class="submenu-toggle" onclick="toggleSubMenu()">
+Our Programs of Focus ▼
+</div>
+
+
+<ul id="programMenu" class="submenu">
+
+<li><a href="every-child-must-learn.html">Every Child Must Read Literacy Program</a></li>
+
+<li><a href="never-late-to-learn.html">Never Later to Learn - Adult Literacy Program</a></li>
+
+<li><a href="clean-and-healthy-schools-initiative.html">Environmental Awareness Initiative</a></li>
+
+<li><a href="college-career-readiness.html">College & Career Preparation</a></li>
+
+<li><a href="digital-skills-for-all.html">Digital Literacy Skills Training Program</a></li>
+<li><a href="teacher-empowerment.html">Teachers Skills Development Program</a></li>
+<li><a href="wasse-waec-makeup.html">WASSCE & WAEC Tutorial Training</a></li>
+<li><a href="grant-proposal.html">Grant and Project Bidding Training</a></li>
+<li><a href="visually-impaired.html">Literacy Training for the Visually Impaired</a></li>
+
+
+</ul>
+
+</li>
+
+
+
+<li><a href="pre-registration.html">Pre-Register Today</a></li>
+
+<li><a href="gallery.html">Our Media Gallery</a></li>
+
+<li><a href="staff.html">Our Team</a></li>
+
+<li><a href="volunteer.html">Volunteer With Us</a></li>
+
+<li><a href="partners.html">Our Partners</a></li>
+
+<li><a href="report.html">Our Reports</a></li>
+
+<li><a href="donate.html">Donate to Our Cause</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("navMenu").classList.toggle("active");
+
+}
+
+
+function toggleSubMenu(){
+
+document.getElementById("programMenu").classList.toggle("active");
+
+}
+
+</script>
 
             <section id="Programs">
             <h2><strong>OUR PROGRAMS</strong></h2>

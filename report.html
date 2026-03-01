@@ -1,61 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Readers Liberia</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Readers Liberia</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
-    <!-- Banner -->
-    <header class="banner">
-        <div class="banner-content">
-            <!-- Logo + Organization Name -->
-            <div class="top-left">
-                <img src="images/srl logo.jpg" alt="Smart Readers Logo" class="logo">
-                <h1>Smart Readers Liberia, Inc.</h1>
-            </div>
 
-            <!-- Center Text -->
-            <div class="center-text">
-                <h1>We Lead in Making Literacy Education Inclusive of All Learners</h1>
-            </div>
-        </div>
-    </header>
+<!-- Banner -->
+<header class="banner">
 
-    <!-- Navigation -->
-     <nav class="navbar">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="values.html">Values</a></li>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="pre-registration.html">Pre-Register</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="staff.html">Team</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="partners.html">Our Partners</a></li>
-            <li><a href="report.html">Reports</a></li>
-            <li><a href="donate.html">Donate</a></li>
-        </ul>
-    </nav>
+<div class="banner-content">
 
-    <!-- Page Content -->
-    <section id="reports">
+<div class="top-left">
+
+<img src="images/srl logo.jpg" alt="Smart Readers Logo" class="logo">
+
+<h1>Smart Readers Liberia, Inc.</h1>
+
+</div>
+
+
+<div class="center-text">
+
+<h1>
+We Lead in Making Literacy Education Inclusive of All Learners
+</h1>
+
+</div>
+
+</div>
+
+</header>
+<!-- Navigation -->
+<nav class="navbar">
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</div>
+<ul id="navMenu">
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+<li><a href="values.html">Our Core Values</a></li>
+
+
+
+<!-- Programs Menu -->
+
+<li class="has-submenu">
+
+<div class="submenu-toggle" onclick="toggleSubMenu()">
+Our Programs of Focus ▼
+</div>
+
+
+<ul id="programMenu" class="submenu">
+
+<li><a href="every-child-must-learn.html">Every Child Must Read Literacy Program</a></li>
+
+<li><a href="never-late-to-learn.html">Never Later to Learn - Adult Literacy Program</a></li>
+
+<li><a href="clean-and-healthy-schools-initiative.html">Environmental Awareness Initiative</a></li>
+
+<li><a href="college-career-readiness.html">College & Career Preparation</a></li>
+
+<li><a href="digital-skills-for-all.html">Digital Literacy Skills Training Program</a></li>
+<li><a href="teacher-empowerment.html">Teachers Skills Development Program</a></li>
+<li><a href="wasse-waec-makeup.html">WASSCE & WAEC Tutorial Training</a></li>
+<li><a href="grant-proposal.html">Grant and Project Bidding Training</a></li>
+<li><a href="visually-impaired.html">Literacy Training for the Visually Impaired</a></li>
+
+
+</ul>
+
+</li>
+
+
+
+<li><a href="pre-registration.html">Pre-Register Today</a></li>
+
+<li><a href="gallery.html">Our Media Gallery</a></li>
+
+<li><a href="staff.html">Our Team</a></li>
+
+<li><a href="volunteer.html">Volunteer With Us</a></li>
+
+<li><a href="partners.html">Our Partners</a></li>
+
+<li><a href="report.html">Our Reports</a></li>
+
+<li><a href="donate.html">Donate to Our Cause</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("navMenu").classList.toggle("active");
+
+}
+
+
+function toggleSubMenu(){
+
+document.getElementById("programMenu").classList.toggle("active");
+
+}
+
+</script>
+
+
+
+<!-- Reports Section -->
+<section class="reports-section">
+
 
 <h2>Reports & Documents</h2>
+<p><strong>Note:</strong>These reports are not yet available for download. Please check back later.</p>
 
-<p>
-Download our reports, project updates, and program documents.
-</p>
-<p><strong>Note:</strong> These reports are not yet available. Please check back later.</p>
+
 
 <div class="reports-container">
 
+
 <div class="report-card">
 
-<div class="report-icon">📄</div>
+<div class="report-icon">📊</div>
 
 <h3>2025 Literacy Program Report</h3>
 
@@ -68,7 +156,6 @@ Download Report
 </a>
 
 </div>
-
 
 <div class="report-card">
 
@@ -85,22 +172,19 @@ Download Report
 </a>
 
 </div>
+
 <div class="report-card">
 
 <div class="report-icon">📊</div>
 
 <h3>Literacy Program Annual Report</h3>
 
-<p>
-Summary of activities and achievements of Smart Readers Liberia literacy program.
-</p>
 
 <a href="reports/annual-report-2025.pdf" class="report-btn">
 Download Report
 </a>
 
 </div>
-
 
 <div class="report-card">
 
@@ -118,82 +202,177 @@ Download Document
 
 </div>
 
-</div>
 
 </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- About -->
-            <div class="footer-col">
-                <h3>Smart Readers Liberia</h3>
-                <p>
-                    We are committed to inclusive education and literacy development 
-                    for children and adults across Liberia.
-                </p>
-            </div>
 
-            <!-- Quick Links -->
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="programs.html">Our Programs</a></li>
-                    <li><a href="volunteer.html">Volunteer</a></li>
-                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
-                </ul>
-            </div>
 
-            <!-- Contact -->
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <p>Email: smartreadersnet@gmail.com</p>
-                <p>Phone: +231 889-559-762 <br>Phone: +231 773-223-483</p>
-                <p>Monrovia, Liberia</p>
-            </div>
 
-            <!-- Social Media -->
-            <div class="footer-col">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/SmartReadersLiberia" target="_blank">Facebook</a>
-                    <a href="https://www.linkedin.com/company/smartreadersliberia" target="_blank">LinkedIn</a>
-                    <a href="https://www.youtube.com/@SmartReadersLiberiaInc" target="_blank">YouTube</a>
-                </div>
-            </div>
-        </div>
+<!-- Footer -->
+<footer class="footer">
 
-        <div class="footer-bottom">
-            <p>&copy; 2026 Smart Readers Liberia, Inc. | All Rights Reserved</p>
-        </div>
-    </footer>
 
-    <!-- JavaScript to generate reports list -->
-    <script>
-        const reports = [
-            { title: "Literacy Annual Report 2026", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_1" },
-            { title: "Annual Teacher Training Report", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_2" },
-            { title: "Annual Volunteer Impact Report", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_3" },
-            { title: "New Community Literacy Report", url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_4" }
-        ];
+<div class="footer-container">
 
-        const reportsList = document.getElementById('reports-list');
 
-        reports.forEach(report => {
-            const div = document.createElement('div');
-            div.classList.add('report-item');
 
-            const link = document.createElement('a');
-            link.href = report.url;
-            link.target = "_blank";
-            link.textContent = report.title + " - Download";
-            link.classList.add('download-btn');
+<div class="footer-col">
 
-            div.appendChild(link);
-            reportsList.appendChild(div);
-        });
-    </script>
+<h3>Smart Readers Liberia</h3>
+
+<p>
+We are committed to inclusive education and literacy development 
+for children and adults across Liberia.
+</p>
+
+</div>
+
+
+
+
+<div class="footer-col">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="programs.html">Our Programs</a></li>
+
+<li><a href="volunteer.html">Volunteer</a></li>
+
+<li><a href="donate.html" class="donate-btn">Donate</a></li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="footer-col">
+
+<h3>Contact Us</h3>
+
+<p>Email: smartreadersnet@gmail.com</p>
+
+<p>
+
+Phone: +231 889-559-762<br>
+
+Phone: +231 773-223-483
+
+</p>
+
+<p>Monrovia, Liberia</p>
+
+</div>
+
+
+
+
+<div class="footer-col">
+
+<h3>Follow Us</h3>
+
+<div class="social-links">
+
+
+<a href="https://www.facebook.com/SmartReadersLiberia" target="_blank">
+
+Facebook
+
+</a>
+
+
+<a href="https://www.linkedin.com/company/smartreadersliberia" target="_blank">
+
+LinkedIn
+
+</a>
+
+
+<a href="https://www.youtube.com/@SmartReadersLiberiaInc" target="_blank">
+
+YouTube
+
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>&copy; 2026 Smart Readers Liberia, Inc. | All Rights Reserved</p>
+
+</div>
+
+
+</footer>
+
+
+
+
+<!-- Auto Reports Script -->
+
+<script>
+
+const reports = [
+
+{title:"Literacy Annual Report 2026",
+url:"https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_1"},
+
+{title:"Annual Teacher Training Report",
+url:"https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_2"},
+
+{title:"Annual Volunteer Impact Report",
+url:"https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_3"},
+
+{title:"New Community Literacy Report",
+url:"https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_4"}
+
+];
+
+
+const reportsList=document.getElementById("reports-list");
+
+
+reports.forEach(report=>{
+
+const div=document.createElement("div");
+
+div.classList.add("report-card");
+
+
+div.innerHTML=`
+
+<div class="report-icon">📄</div>
+
+<h3>${report.title}</h3>
+
+<a href="${report.url}" target="_blank" class="report-btn">
+
+Download Report
+
+</a>
+
+`;
+
+reportsList.appendChild(div);
+
+});
+
+</script>
+
 
 </body>
+
 </html>
