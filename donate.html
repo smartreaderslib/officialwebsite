@@ -7,25 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+
 <header>
-   <header class="banner">
 
-        <!-- Banner Content -->
-        <div class="banner-content">
-            <!-- Logo + Organization Name -->
-            <div class="top-left">
-                <img src="images/srl logo.jpg" alt="Smart Readers Logo" class="logo">
-                <h1>Smart Readers Liberia, Inc.</h1>
-            </div>
+<section class="banner">
 
-            <!-- Center Text -->
-            <div class="center-text">
-                <h1>We Lead in Making Literacy Education Inclusive of All Learners</h1>
+<!-- Logo and Organization Name -->
+<div class="top-left">
+    <img src="images/srl logo.jpg" alt="Smart Readers Logo" class="logo">
+    <h1>Smart Readers Liberia, Inc.</h1>
+</div>
+
+<div class="slides">
+
+    <div class="slide active">
+        <img src="images/banner1.jpg">
+        <div class="banner-text">
+            <h1>Empowering Children Through Literacy</h1>
+            <p>Helping struggling readers succeed in Liberia.</p>
+            <a href="donate.html" class="banner-btn">Donate Now</a>
         </div>
-        </div>
-    </header>
+    </div>
 
-   <!-- Navigation -->
+    <div class="slide">
+        <img src="images/banner2.jpg">
+        <div class="banner-text">
+            <h1>Every Child Deserves to Read</h1>
+            <p>Supporting children with innovative reading programs.</p>
+            <a href="volunteer.html" class="banner-btn">Join Us</a>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="images/banner3.jpg">
+        <div class="banner-text">
+            <h1>Building Liberia's Future Readers</h1>
+            <p>Together we can transform education.</p>
+            <a href="about.html" class="banner-btn">Learn More</a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+</header>
+
+ 
+</section>
+<!-- Navigation -->
 <nav class="navbar">
 
 <div class="menu-toggle" onclick="toggleMenu()">
@@ -109,6 +140,28 @@ document.getElementById("programMenu").classList.toggle("active");
 }
 
 </script>
+<script>
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function changeSlide(){
+
+    slides[index].classList.remove("active");
+
+    index++;
+
+    if(index >= slides.length){
+        index = 0;
+    }
+
+    slides[index].classList.add("active");
+
+}
+
+setInterval(changeSlide, 5000);
+
+</script>
         <div class="donation-cards">
 <section id="donate">
 
@@ -125,8 +178,8 @@ Every contribution makes a difference.
 <h3>Orange Money</h3>
 <p class="donation-number">Merchant Name: Smart Readers Liberia, Inc.</p>
 <p class="donation-number">Merchant Code: 7811132</p>
-<p class="donation-number">For USD Dial: *144*253#</p>
-<p class="donation-number">For LRD Dial: *144*164#</p>
+<p class="donation-number"> Dial: *144*253# for USD</p>
+<p class="donation-number">Dial: *144*164# for LRD</p>
 </div>
 
 <div class="donation-method">
@@ -136,16 +189,20 @@ Every contribution makes a difference.
 <p class="donation-number">Dial: *156*3 # </p>
 
 </div>
+<div class="donation-method">
+ <h2>Donate via Sendwave</h2>
+  <p>You can support our literacy programs by sending a donation through Sendwave.</p>
 
-<p class="donation-impact">
-Once you have made your donation, please send a confirmation email to <a href="mailto:smartreadersnet@gmail.com">smartreadersnet@gmail.com</a>.
-Include your name, the amount donated, and the date of the transaction. This helps us keep track of donations and ensures that your contribution is acknowledged.
-</p>
+  <p><strong>Recipient Name:</strong> Smart Readers Liberia, Inc.</p>
+  <p><strong>Phone Number:</strong> +231 889-559-762</p>
+  <p><strong>Country:</strong> Liberia</p>
 
+  <p>After sending your donation, please fill out the below form so we can recognize you on our website and social media.</p>
+</section>
+</div>
 </div>
 
 </section>
-
 <div class="form-container">
     <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSc--4O9_kb0EeZYa9hJtwuuiRNCmKDzcHTgru3YUjarL3JN9g/viewform?embedded=true" 

@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Smart Readers Liberia</title>
-         <link rel="stylesheet" href="style.css">
- <header>
-   <header class="banner">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Readers Liberia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- Banner Content -->
-        <div class="banner-content">
-            <!-- Logo + Organization Name -->
-            <div class="top-left">
-                <img src="images/srl logo.jpg" alt="Smart Readers Logo" class="logo">
-                <h1>Smart Readers Liberia, Inc.</h1>
-            </div>
+<body>
 
-            <!-- Center Text -->
-            <div class="center-text">
-                <h1>We Lead in Making Literacy Education Inclusive of All Learners</h1>
-               
-            </div>
+<header>
+
+<section class="banner">
+
+<!-- Logo and Organization Name -->
+<div class="top-left">
+    <img src="images/srl logo.jpg" alt="Smart Readers Logo" class="logo">
+    <h1>Smart Readers Liberia, Inc.</h1>
+</div>
+
+<div class="slides">
+
+    <div class="slide active">
+        <img src="images/banner1.jpg">
+        <div class="banner-text">
+            <h1>Empowering Children Through Literacy</h1>
+            <p>Helping struggling readers succeed in Liberia.</p>
+            <a href="donate.html" class="banner-btn">Donate Now</a>
         </div>
-    </header>
+    </div>
 
-    <!-- Navigation -->
+    <div class="slide">
+        <img src="images/banner2.jpg">
+        <div class="banner-text">
+            <h1>Every Child Deserves to Read</h1>
+            <p>Supporting children with innovative reading programs.</p>
+            <a href="volunteer.html" class="banner-btn">Join Us</a>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="images/banner3.jpg">
+        <div class="banner-text">
+            <h1>Building Liberia's Future Readers</h1>
+            <p>Together we can transform education.</p>
+            <a href="about.html" class="banner-btn">Learn More</a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+</header>
+
+ 
+</section>
+<!-- Navigation -->
 <nav class="navbar">
 
 <div class="menu-toggle" onclick="toggleMenu()">
@@ -106,6 +138,28 @@ function toggleSubMenu(){
 document.getElementById("programMenu").classList.toggle("active");
 
 }
+
+</script>
+<script>
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function changeSlide(){
+
+    slides[index].classList.remove("active");
+
+    index++;
+
+    if(index >= slides.length){
+        index = 0;
+    }
+
+    slides[index].classList.add("active");
+
+}
+
+setInterval(changeSlide, 5000);
 
 </script>
         <section>
