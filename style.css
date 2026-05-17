@@ -10,8 +10,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f4f6f9;
-    color: rgb(3, 1, 1);
+    background-color: #1e3a5f;
+    color: #0f0a01;
     text-align: justify;
 }
 
@@ -20,7 +20,7 @@ body {
 ========================= */
 a {
     text-decoration: none;
-    color:white;
+    color: blue;
 }
 a:hover {
     color: #007bff;
@@ -32,7 +32,7 @@ a:hover {
 .banner{
     position:relative;
     width:100%;
-    height:600px;
+    height:700px;
     overflow:hidden;
 }
 
@@ -66,7 +66,7 @@ a:hover {
     left:50%;
     transform:translate(-50%,-50%);
     text-align:center;
-    color:white;
+    color: #fff8f0;
     z-index:2;
     animation: textSlide 2s ease;
 }
@@ -89,13 +89,6 @@ a:hover {
     margin-bottom:15px;
 }
 
-/* Paragraph */
-
-.banner-text p{
-    font-size:22px;
-    margin-bottom:20px;
-}
-
 /* Button */
 
 .banner-btn{
@@ -109,7 +102,7 @@ a:hover {
 }
 
 .banner-btn:hover{
-    background:#ff9900;
+    background:#1E3A5F;
 }
 
 /* Text animation */
@@ -185,7 +178,7 @@ a:hover {
     position:absolute;
     bottom:20px;
     width:100%;
-    color:white;
+    color:#007BFF;
     font-size:20px;
     white-space:nowrap;
     animation: scrollText 45s linear infinite;
@@ -260,7 +253,7 @@ a:hover {
 
 /* NAVBAR */
 .navbar {
-    background: #0f0202;
+    background: navy;
     padding: 15px;
     position: relative;
 }
@@ -280,7 +273,7 @@ a:hover {
     position: absolute;
     right: 20px;
     top: 10px;
-    background-color: #0e0e0d;
+    background-color:navy;
     padding: 8px 14px;
     border-radius: 6px;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
@@ -296,7 +289,7 @@ a:hover {
 /* MENU LINKS */
 #navMenu li {
     padding: 12px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid gold;
 }
 
 #navMenu li a {
@@ -391,12 +384,6 @@ a:hover {
     box-sizing: border-box;
 }
 
-/* SECTION */
-.founder-section {
-    min-height: 100vh;
-    background: url('images/reading.jpg') no-repeat center center/cover;
-    }
-
 /* OVERLAY */
 .overlay {
     background: rgba(0, 0, 0, 0.65);
@@ -406,100 +393,112 @@ a:hover {
     justify-content: center;
     padding: 40px 20px;
 }
-
-/* CONTAINER */
-.founder-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1100px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-/* IMAGE WRAPPER */
-.founder-image {
-    position: relative;
-}
-
-/* IMAGE */
-.founder-image img {
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 4px solid #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* BADGE */
-.badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: #ff9800;
-    color: #fff;
-    padding: 8px 14px;
-    font-size: 0.85rem;
-    font-weight: bold;
-    border-radius: 20px;
-    z-index: 2;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-/* IMAGE OVERLAY */
-.image-overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 12px;
-    border-radius: 0 0 15px 15px;
+/* =========================
+   LATEST NEWS SECTION
+========================= */
+.latest-news {
+    padding: 70px 10%;
+    background: #f9f9f9;
     text-align: center;
 }
 
-.image-overlay h3 {
-    font-size: 1.1rem;
-    margin-bottom: 3px;
+/* Section Heading */
+.section-title h1 {
+    font-size: 36px;
+    color: #3607de;
+    margin-bottom: 10px;
 }
 
-.image-overlay p {
-    font-size: 0.9rem;
+.section-title p {
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
 }
 
-/* TEXT */
-.founder-content {
-    max-width: 600px;
-    color: #ffffff;
+/* News Layout */
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-.founder-content h1 {
-    font-size: 2.3rem;
-    margin-bottom: 15px;
+/* News Card */
+.news-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    text-align: left;
 }
 
-.founder-content p {
-    font-size: 1.1rem;
+.news-card:hover {
+    transform: translateY(-8px);
+}
+
+/* News Image */
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* News Content */
+.news-content {
+    padding: 25px;
+}
+
+.news-date {
+    color: #f4b942;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.news-content h3 {
+    margin: 15px 0;
+    color: #1e3a5f;
+    font-size: 22px;
+}
+
+.news-content p {
+    color: #555;
     line-height: 1.7;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .founder-container {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Read More Button */
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1e3a5f;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 
-    .founder-image img {
-        width: 220px;
-        height: 260px;
-    }
+.read-more:hover {
+    background: #f4b942;
+    color: #1e3a5f;
+}
 
-    .founder-content h1 {
-        font-size: 1.8rem;
-    }
+/* View All News Button */
+.news-button {
+    margin-top: 40px;
+}
+
+.news-button a {
+    background: #f4b942;
+    color: #1e3a5f;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.news-button a:hover {
+    background: #1e3a5f;
+    color: white;
 }
 /* =========================
 DONATION SECTION
@@ -567,7 +566,7 @@ DONATION SECTION
     margin-top: 20px;
     padding: 14px 25px;
     background: #ffcc00;
-    color: #002147;
+    color: orange;
     font-weight: bold;
     border-radius: 6px;
     transition: 0.3s;
@@ -586,13 +585,13 @@ DONATION SECTION
 }
  body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      background-color: gold;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #d6d0d0;
-      color: white;
+      background-color: navy;
+      color: gold;
       text-align: center;
       padding: 50px 20px;
     }
@@ -615,7 +614,7 @@ DONATION SECTION
       gap: 25px;
     }
     .donor-card {
-      background-color: white;
+      background-color: gold;
       border-radius: 12px;
       padding: 20px;
       text-align: center;
@@ -626,9 +625,9 @@ DONATION SECTION
       transform: translateY(-5px);
     }
     .donor-card img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
       object-fit: cover;
       margin-bottom: 15px;
     }
@@ -650,7 +649,7 @@ DONATION SECTION
       display: inline-block;
       margin: 40px auto 0;
       padding: 15px 30px;
-      background-color: hsl(341, 89%, 42%);
+      background-color:gold;
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -659,7 +658,7 @@ DONATION SECTION
       transition: background-color 0.3s;
     }
     .cta-button:hover {
-      background-color: #357ABD;
+      background-color:b#357ABD;
     }
 /* =========================
    SECTIONS
@@ -931,7 +930,7 @@ section p {
     color: #ffcc00;
 }
 .footer-bottom {
-    background-color: #001733;
+    background-color:aliceblue;
     text-align: center;
     padding: 15px;
     font-size: 14px;
