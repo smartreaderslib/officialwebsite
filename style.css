@@ -8,11 +8,16 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     background-color: #1e3a5f;
     color: #0f0a01;
     text-align: justify;
+}
+
+h3{
+    font-family: sans-serif;
+    color:#114de3;
 }
 
 /* =========================
@@ -565,8 +570,8 @@ DONATION SECTION
     display: inline-block;
     margin-top: 20px;
     padding: 14px 25px;
-    background: #ffcc00;
-    color: orange;
+    background: #a08103;
+    color: rgb(156, 108, 18);
     font-weight: bold;
     border-radius: 6px;
     transition: 0.3s;
@@ -584,14 +589,17 @@ DONATION SECTION
     color: #555;
 }
  body {
-      font-family: Arial, sans-serif;
-      background-color: gold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: rgb(173, 150, 19);
       margin: 0;
       padding: 0;
     }
+    h3{
+        color: #114de3;
+    }
     header {
-      background-color: navy;
-      color: gold;
+      background-color: #1e7ae3;
+      color: rgb(165, 144, 22);
       text-align: center;
       padding: 50px 20px;
     }
@@ -614,7 +622,7 @@ DONATION SECTION
       gap: 25px;
     }
     .donor-card {
-      background-color: gold;
+      background-color: rgb(246, 211, 39);
       border-radius: 12px;
       padding: 20px;
       text-align: center;
@@ -684,7 +692,7 @@ section p {
 ========================= */
 #partners {
     padding: 50px 20px;
-    background-color: #f5f5f5;
+    background-color: #eeee48;
     text-align: center;
 }
 #partners h2 {
@@ -930,7 +938,7 @@ section p {
     color: #ffcc00;
 }
 .footer-bottom {
-    background-color:aliceblue;
+    background-color:red;
     text-align: center;
     padding: 15px;
     font-size: 14px;
