@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Readers Liberia</title>
     <link rel="stylesheet" href="style.css">
-
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R0K24JTKD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-5R0K24JTKD');
 </script>
 </head>
-
-
 <body>
-
 <header>
-
 <section class="banner">
 
 <!-- Logo and Organization Name -->
@@ -39,7 +33,6 @@
             <a href="donate.html" class="banner-btn">Donate Now</a>
         </div>
     </div>
-
     <div class="slide">
         <img src="images/banner2.jpg">
         <div class="banner-text">
@@ -47,7 +40,6 @@
             <a href="volunteer.html" class="banner-btn">Join Us</a>
         </div>
     </div>
-
     <div class="slide">
         <img src="images/banner3.jpg">
         <div class="banner-text">
@@ -55,123 +47,64 @@
             <a href="about.html" class="banner-btn">Learn More</a>
         </div>
     </div>
-
 </div>
-
 </section>
-
 </header>
-
- 
-</section>
+ </section>
 <!-- Navigation -->
 <nav class="navbar">
-
 <div class="menu-toggle" onclick="toggleMenu()">
 ☰ Menu
 </div>
 <ul id="navMenu">
 <li><a href="index.html">Home</a></li>
-
 <li><a href="about.html">About Us</a></li>
-
 <li><a href="contact.html">Contact Us</a></li>
-
 <li><a href="values.html">Our Core Values</a></li>
-
-
-
 <!-- Programs Menu -->
-
 <li class="has-submenu">
-
 <div class="submenu-toggle" onclick="toggleSubMenu()">
 Our Programs of Focus ▼
 </div>
-
-
 <ul id="programMenu" class="submenu">
-
 <li><a href="every-child-must-learn.html">Every Child Must Read Literacy Program</a></li>
-
 <li><a href="never-late-to-learn.html">Never Later to Learn - Adult Literacy Program</a></li>
-
 <li><a href="clean-and-healthy-schools-initiative.html">Environmental Awareness Initiative</a></li>
-
 <li><a href="college-career-readiness.html">College & Career Preparation</a></li>
-
 <li><a href="digital-skills-for-all.html">Digital Literacy Skills Training Program</a></li>
-<li><a href="teacher-empowerment.html">Teachers Skills Development Program</a></li>
+<li><a href="teacher-empowerment.html">Teachers Literacy Skills Development Program</a></li>
 <li><a href="wasse-waec-makeup.html">WASSCE & WAEC Tutorial Training</a></li>
 <li><a href="grant-proposal.html">Grant and Project Bidding Training</a></li>
 <li><a href="visually-impaired.html">Literacy Training for the Visually Impaired</a></li>
-
-
 </ul>
-
 </li>
-
-
-
-<li><a href="pre-registration.html">Pre-Register Today</a></li>
-
-<li><a href="gallery.html">Our Media Gallery</a></li>
-
+<li><a href="pre-registration.html">Register</a></li>
+<li><a href="gallery.html">Media Gallery</a></li>
 <li><a href="staff.html">Our Team</a></li>
-
-<li><a href="volunteer.html">Volunteer With Us</a></li>
-<li><a href="donors.html">Our Donors & Sponsors</a></li>
-<li><a href="events.html">Our Events</a></li>
-
-<li><a href="partners.html">Our Partners</a></li>
-
-<li><a href="report.html">Our Reports</a></li>
-
-<li><a href="donate.html">Donate to Our Cause</a></li>
-
+<li><a href="volunteer.html">Join Us</a></li>
+<li><a href="donate.html">Donate</a></li>
 </ul>
-
 </nav>
-
-
-
 <script>
-
 function toggleMenu(){
-
 document.getElementById("navMenu").classList.toggle("active");
-
 }
-
-
 function toggleSubMenu(){
-
 document.getElementById("programMenu").classList.toggle("active");
-
 }
-
 </script>
 <script>
-
 let slides = document.querySelectorAll(".slide");
 let index = 0;
-
 function changeSlide(){
-
     slides[index].classList.remove("active");
-
     index++;
-
     if(index >= slides.length){
         index = 0;
     }
-
     slides[index].classList.add("active");
-
 }
-
 setInterval(changeSlide, 5000);
-
 </script>
         <section>
             <h2><strong>TEACHERS LITERACY SKILLS EMPOWERED PROGRAM</strong></h2>
