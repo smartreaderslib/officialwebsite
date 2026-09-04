@@ -275,6 +275,7 @@ index h1{
 /* SHOW MENU */
 #navMenu.active {
     display: block;
+    size: 10pt;
 }
 
 /* PROGRAM SUBMENU BUTTON */
