@@ -1,24 +1,20 @@
 /* =========================
    GENERAL RESET
 ========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    background-color: #1e3a5f;
-    color: #0f0a01;
-    text-align: justify;
+.sedgwick-ave-regular {
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h3{
-    font-family: sans-serif;
-    color:#114de3;
-}
+ 
 
 /* =========================
    LINKS
@@ -76,6 +72,11 @@ a:hover {
     animation: textSlide 2s ease;
 }
 
+index h1{
+    text-align: center;
+    color: #007BFF;
+}
+
 /* Overlay */
 
 .slide::after{
@@ -126,36 +127,6 @@ a:hover {
 
 }
 
-/* Background Image Animation */
-
-@keyframes bannerSlide {
-
-    0%{
-        background-image: url('images/banner1.jpg');
-    }
-
-    33%{
-        background-image: url('images/banner2.jpg');
-    }
-
-    66%{
-        background-image: url('images/banner3.jpg');
-    }
-
-    99%{
-        background-image: url('images/banner4.jpg');
-    }
-    133%{
-        background-image: url('images/banner5.jpg');
-    }
-    100%{
-        background-image: url('images/banner6.jpg');
-    }
-    100%{
-        background-image: url('images/banner7.jpg');
-    }
-
-}
 
 /* Dark overlay */
 
@@ -258,7 +229,7 @@ a:hover {
 
 /* NAVBAR */
 .navbar {
-    background: navy;
+    background: red;
     padding: 15px;
     position: relative;
 }
@@ -272,23 +243,21 @@ a:hover {
 
 /* MAIN HAMBURGER BUTTON */
 .menu-toggle {
-    font-size: 30px;
+    font-size: 14px;
     color: white;
     cursor: pointer;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 10px;
-    background-color:navy;
-    padding: 8px 14px;
-    border-radius: 6px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+    background-color: red;
+
 }
 
 /* MENU */
 #navMenu {
     display: none;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* MENU LINKS */
@@ -334,14 +303,24 @@ a:hover {
 /* SUBMENU LINKS */
 .submenu li {
     padding: 10px;
+    text-align: left;
 }
 
 .submenu li a {
     color: white;
+    text-align: center;
 }
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; }
-    .container { max-width:1100px; margin:auto; padding:20px; }
-    h2 { text-align:center; margin-bottom:20px; }
+    body { 
+        font-family: Arial, sans-serif; 
+        margin:0; 
+        background:#f5f5f5; }
+    .container { 
+        max-width:1100px; 
+        margin:auto; 
+        padding:20px; }
+    h2 { 
+        text-align:left; 
+        margin-bottom:20px; }
 
     .cards {
     display:grid;
@@ -409,16 +388,20 @@ a:hover {
 
 /* Section Heading */
 .section-title h1 {
-    font-size: 36px;
+    font-size: 18px;
     color: #3607de;
     margin-bottom: 10px;
 }
 
 .section-title p {
-    color: #555;
-    max-width: 700px;
-    margin: 0 auto 50px;
-    line-height: 1.8;
+     background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/banner777.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: wheat;
+   text-align: left;
+   padding: 40px 20px;
+
 }
 
 /* News Layout */
@@ -446,6 +429,7 @@ a:hover {
 .news-card img {
     width: 100%;
     height: 220px;
+    padding: 20;
     object-fit: cover;
 }
 
@@ -461,16 +445,21 @@ a:hover {
 }
 
 .news-content h3 {
-    margin: 15px 0;
+    margin: 10px 0;
     color: #1e3a5f;
     font-size: 22px;
 }
 
 .news-content p {
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 20px;
+ background:linear-gradient(rgba(58, 50, 50, 0.7), rgba(109, 103, 103, 0.7)), url('images/banner888.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: aliceblue;
+   text-align: justify;
+   padding: 40px 20px;;
 }
+
 
 /* Read More Button */
 .read-more {
@@ -589,25 +578,33 @@ DONATION SECTION
     color: #555;
 }
  body {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      background-color: rgb(173, 150, 19);
-      margin: 0;
-      padding: 0;
+ background:linear-gradient(rgba(192, 180, 180, 0.7), rgba(240, 237, 237, 0.7)), url('images/banner100.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   text-align: justify;
+   padding: 40px 20px;;
+   font-size: larger;
+    }
+    .home-text {
+        color: #f4f6f9;
+        font-size: 18px;
     }
     h3{
         color: #114de3;
     }
     header {
-      background-color: #1e7ae3;
-      color: rgb(165, 144, 22);
-      text-align: center;
-      padding: 50px 20px;
+    background-color: #1e7ae3;
+    color: rgb(165, 144, 22);
+    text-align: center;
+    padding: 50px 20px;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    margin: 0;
+    font-size: 2.5rem;
     }
     header p {
+        background-image: url("images/banner666.jpg");
       margin: 10px 0 0;
       font-size: 1.2rem;
     }
@@ -677,14 +674,31 @@ section {
     background-color: #fff;
 }
 section h2 {
+    text-align: center;
     margin-bottom: 15px;
     color: #0056b3;
 }
-section p {
-    max-width: 700px;
-    margin: 10px auto;
-    line-height: 1.8;  
+h5{
+    color: red;
 }
+.latest-news p{
+    font-size: 16px;
+}
+
+p i{
+    color: #007BFF;
+    font-style: italic;
+    font-size: 16px;
+}
+ section h4{
+    text-align: center;
+
+}
+
+section p{
+    font-size: 16px;
+}
+
 /* =========================
    EMBEDDED GOOGLE FORM
 ========================= */
@@ -767,9 +781,13 @@ section p {
    FOOTER
 ========================= */
 .footer {
-    background-color: #002147;
-    color: #ffffff;
-    padding-top: 40px;
+   background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/banner777.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: wheat;
+   text-align: left;
+   padding: 40px 20px;
 }
 .footer-container {
     display: flex;
@@ -784,26 +802,30 @@ section p {
     margin: 15px;
 }
 .footer-col h3 {
+    font-size: 18px;
     margin-bottom: 15px;
     color: #ffcc00;
 }
 .footer-col p, .footer-col ul li a {
-    font-size: 14px;
+    font-size: large;
     line-height: 1.6;
 }
 .footer-col ul {
     list-style: none;
     padding: 0;
+    font-size: large;
 }
 .footer-col ul li {
     margin-bottom: 8px;
+    font-size: large;
 }
 .footer-col ul li a {
-    color: #ffffff;
-    transition: 0.3s;
+    color: wheat;
+  
 }
 .footer-col ul li a:hover {
     color: #ffcc00;
+    font-size: large;
 }
 .donate-btn {
     background-color: #ffcc00;
@@ -817,9 +839,10 @@ section p {
     color: #002147 !important;
 }
 .social-links a {
+    font-size: large;
     display: inline-block;
     margin-right: 10px;
-    color: #fff;
+    color: #3010e0;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -848,21 +871,66 @@ section p {
     margin-top: 40px;
 }
 .staff-card {
-    background: #fff;
+    background: lightyellow;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: 0.3s ease;
 }
-.staff-card:hover { transform: translateY(-5px); }
-.staff-card img { width: 130px; height: 130px; object-fit: cover; border-radius: 50%; margin-bottom: 15px; }
-.staff-card h3 { margin: 10px 0 5px; }
-.staff-card h5 { color: #777; margin-bottom: 15px; }
-.bio-btn { padding: 8px 16px; background: #0a3d62; color: #fff; border-radius: 20px; cursor: pointer; }
-.bio-btn:hover { background: #1e5f8a; }
-.modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
-.modal-content { background: #fff; margin: 10% auto; padding: 30px; width: 90%; max-width: 500px; border-radius: 10px; max-height: 70vh; overflow-y: auto; }
-.close-btn { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; }
+.staff-card:hover {
+     transform: translateY(-5px); 
+    }
+.staff-card img { 
+    width: 130px; 
+    height: 130px; 
+    object-fit: cover; 
+    border-radius: 10%; 
+    margin-bottom: 5px; 
+}
+.staff-card h3 {
+    text-align: center;
+    margin: 10px 0 5px; 
+}
+.staff-card h5 {
+    color: #e60d0d; 
+    margin-bottom: 15px; 
+}
+.bio-btn { padding: 8px 16px; 
+    background: #0a3d62; 
+    color: #fff; 
+    border-radius: 20px; 
+    cursor: pointer; 
+}
+.bio-btn:hover { 
+    background: #1e5f8a; 
+}
+.modal { display: none; 
+    position: fixed; 
+    z-index: 999; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.6); 
+    justify-content: center; 
+    align-items: center; 
+}
+.modal-content { 
+    background: #fff; 
+    margin: 10% auto; 
+    padding: 30px; 
+    width: 90%; 
+    max-width: 500px; 
+    border-radius: 10px; 
+    max-height: 70vh; 
+    overflow-y: auto; }
+.close-btn { 
+    position: absolute; 
+    right: 15px; 
+    top: 10px; 
+    font-size: 24px; 
+    cursor: pointer; 
+}
 
 /* =========================
    FORMS
@@ -871,10 +939,12 @@ section p {
 .volunteer-form {
     max-width: 650px;
     margin: auto;
-    background: #fff;
-    padding: 25px;
+    background: #e4cfcf;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    color: #007BFF;
 }
 input, select, textarea {
     width: 100%;
@@ -883,21 +953,53 @@ input, select, textarea {
     border-radius: 6px;
     border: 1px solid #ccc;
 }
-textarea { resize: vertical; }
-button { margin-top: 25px; width: 100%; padding: 12px; background: #27ae60; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
-button:hover { background: #219150; }
+textarea { 
+    resize: vertical; 
+}
+button { 
+    margin-top: 25px; 
+    width: 100%; 
+    padding: 12px; 
+    background: #131715; 
+    color: #fff; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; }
+button:hover { 
+    background: #219150; 
+}
 
 /* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
-    .navbar ul { flex-direction: column; align-items: center; }
-    .navbar ul li { margin: 8px 0; }
-    header h1 { font-size: 20px; }
-    section { padding: 25px 15px; }
-    .footer-container { flex-direction: column; text-align: center; }
-    .wrap-img { float: none; display: block; margin: 0 auto 15px; width: 100%; }
-    .fees-box { width: 100%; margin: 10px 0; }
+    .navbar ul { 
+        flex-direction: column; 
+        align-items: left; 
+    }
+    .navbar ul li { 
+        margin: 8px 0; 
+    }
+    header h1 { 
+        font-size: 20px; 
+    }
+    section { 
+        padding: 25px 15px; 
+    }
+    .footer-container { 
+        flex-direction: no; 
+        text-align: left; 
+    }
+    .wrap-img { 
+        float: none; 
+        display: block; 
+        margin: 0 auto 15px; 
+        width: 100%; 
+    }
+    .fees-box { 
+        width: 100%; 
+        margin: 10px 0; 
+    }
 }
 /* =========================
    MOBILE RESPONSIVE BANNER
@@ -908,7 +1010,7 @@ button:hover { background: #219150; }
 /* Reduce banner height */
 
 .banner{
-    height:450px;
+    height:350px;
 }
 
 /* Resize headline */
@@ -951,4 +1053,239 @@ button:hover { background: #219150; }
     font-size:18px;
 }
 
+}
+
+
+/* =========================
+   PROFESSIONAL TYPOGRAPHY
+   ========================= */
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Georgia", serif;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    font-family: "Arial", sans-serif;
+}
+
+a {
+    font-size: 18px;
+}
+
+button,
+.banner-btn,
+.cta-button,
+.read-more,
+.news-button a,
+.donate-main-btn {
+    font-size: 18px;
+}
+
+.navbar a,
+#navMenu li a,
+.submenu-toggle,
+.submenu li a {
+    font-size: 19px;
+}
+
+.banner-text h1 {
+    font-family: "Georgia", serif;
+    font-size: 50px;
+}
+
+.banner-text p {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+}
+
+.center-text h1 {
+    font-size: 36px;
+}
+
+.center-text p {
+    font-size: 20px;
+}
+
+.moving-text {
+    font-size: 20px;
+}
+
+.logo-text {
+    font-size: 20px;
+}
+
+.top-left h1 {
+    font-family: "Georgia", serif;
+    font-size: 50px;
+}
+
+.section-title h1 {
+    font-size: 32px;
+}
+
+.section-title p {
+    font-size: 19px;
+}
+
+.card h3,
+.news-content h3,
+.donor-card h3,
+.staff-card h3,
+.donation-method h3,
+.footer-col h3 {
+    font-size: 24px;
+}
+
+.card p,
+.news-content p,
+.donor-card p,
+.donation-method p,
+.latest-news p,
+section p,
+#donate p,
+#registration p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.news-date {
+    font-size: 16px;
+}
+
+.donation-number {
+    font-size: 20px;
+}
+
+.footer-col p,
+.footer-col ul,
+.footer-col ul li,
+.footer-col ul li a,
+.social-links a {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.footer-bottom {
+    font-size: 16px;
+}
+
+input,
+select,
+textarea {
+    font-size: 18px;
+}
+
+.close-btn {
+    font-size: 28px;
+}
+
+/* Mobile typography */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    p,
+    section p,
+    .card p,
+    .news-content p,
+    .donor-card p {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+    }
+
+    .banner-text p {
+        font-size: 17px;
+    }
+
+    .center-text h1 {
+        font-size: 28px;
+    }
+
+    .center-text p {
+        font-size: 17px;
+    }
+
+    .top-left h1 {
+        font-size: 22px;
+    }
+
+    #navMenu li a,
+    .submenu-toggle {
+        font-size: 18px;
+    }
+
+    .footer-col p,
+    .footer-col ul li,
+    .footer-col ul li a,
+    .social-links a {
+        font-size: 17px;
+    }
 }
