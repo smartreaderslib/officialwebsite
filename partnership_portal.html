@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Readers Liberia</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R0K24JTKD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5R0K24JTKD');
+    </script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+    <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="values.html">Our Core Values</a></li>
+        <li><a href="news.html">Latest News &amp; Updates</a></li>
+
+        <!-- Programs Menu -->
+        <li class="has-submenu">
+            <div class="submenu-toggle" onclick="toggleSubMenu()">
+                Our Programs of Focus ▼
+            </div>
+            <ul id="programMenu" class="submenu">
+                <li><a href="every-child-must-learn.html">Every Child Must Read Literacy Program</a></li>
+                <li><a href="never-late-to-learn.html">Never Later to Learn - Adult Literacy Program</a></li>
+                <li><a href="clean-and-healthy-schools-initiative.html">Environmental Awareness Initiative</a></li>
+                <li><a href="college-career-readiness.html">College &amp; Career Preparation</a></li>
+                <li><a href="digital-skills-for-all.html">Digital Literacy Skills Training Program</a></li>
+                <li><a href="teacher-empowerment.html">Teachers Literacy Skills Development Program</a></li>
+                <li><a href="wasse-waec-makeup.html">WASSCE &amp; WAEC Tutorial Training</a></li>
+                <li><a href="grant-proposal.html">Grant and Project Bidding Training</a></li>
+                <li><a href="visually-impaired.html">Literacy Training for the Visually Impaired</a></li>
+            </ul>
+        </li>
+
+        <li><a href="gallery.html">Media Gallery</a></li>
+        <li><a href="staff.html">Our Team</a></li>
+        <li><a href="volunteer.html">Join Us</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="partnership_portal.html">Request a Partnership</a></li>
+    </ul>
+</nav>
+
+<section class="banner">
+
+    <!-- Logo and Organization Name -->
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="images/srl logo.jpg" alt="Smart Readers Logo" class="logo">
+            <h1><strong>SMART READERS LIBERIA</strong></h1>
+        </div>
+    </header>
+
+    <div class="slides">
+        <div class="slide active">
+            <img src="images/bannerII.jpg" alt="Smart Readers Liberia banner 1">
+        </div>
+        <div class="slide">
+            <img src="images/banner222.jpg" alt="Smart Readers Liberia banner 2">
+        </div>
+        <div class="slide">
+            <img src="images/banner333.jpg" alt="Smart Readers Liberia banner 3">
+        </div>
+    </div>
+
+</section>
+
+<!-- SRL SCHOOL PARTNERSHIP PORTAL -->
+<section id="partnership-portal" class="srl-partnership">
+    <div class="partnership-container">
+
+        <div class="partnership-heading">
+            <h2>Partnership Request Portal</h2>
+            <p>
+                Work with us to improve literacy, strengthen education,
+                and create better learning opportunities for all.
+            </p>
+        </div>
+
+        <div class="partnership-notice">
+            <h3>Submit a Partnership Request</h3>
+            <p>
+                Schools, NGOs, Community based organizations,
+                International organizations, Government Ministries and
+                agencies, Corporate entities, and private individuals can use this
+                portal to request a partnership with Smart Readers Liberia, Inc.
+                All requests are subject to review and approval.
+            </p>
+
+            <h3>How It Works</h3>
+            <ol>
+                <li>Fill out your partnership request form.</li>
+                <li>Upload the required supporting documents.</li>
+                <li>Submit your request for review.</li>
+                <li>SRL reviews your application.</li>
+                <li>The Technical Review Team makes the final decision.</li>
+            </ol>
+
+            <h3>Before You Apply</h3>
+            <ul>
+                <li>Provide accurate organization details.</li>
+                <li>Briefly explain the purpose of the partnership.</li>
+                <li>Describe the expected benefits.</li>
+                <li>Attach your supporting documents.</li>
+                <li>Provide a working email address and phone number.</li>
+            </ul>
+        </div>
+
+        <div class="partnership-form-card">
+            <h3>Partnership Application Form</h3>
+            <p>Complete all required fields before submitting.</p>
+
+            <form
+                id="srlPartnershipForm"
+                action="https://formsubmit.app/f/3vntgjtj3t"
+                method="POST"
+                enctype="multipart/form-data"
+            >
+                <input type="hidden" name="_subject"
+                       value="New SRL Partnership Application">
+
+                <input type="hidden" name="_replyto"
+                       id="srlReplyTo" value="">
+
+                <!-- Spam protection. Leave this field empty. -->
+                <div aria-hidden="true"
+                     style="position:absolute;left:-9999px;">
+                    <label for="srlWebsite">Leave this field empty</label>
+                    <input type="text" id="srlWebsite" name="_gotcha"
+                           tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="organizationType">Organization Type *</label>
+                    <select id="organizationType" name="organization_type" required>
+                        <option value="">Select organization type</option>
+                        <option value="School">School</option>
+                        <option value="National NGO">National NGO</option>
+                        <option value="Community Based Organization">Community Based Organization</option>
+                        <option value="Corporate Entity">Corporate Entity</option>
+                        <option value="Government Ministry or Agency">Government Ministry or Agency</option>
+                        <option value="International Organization">International Organization/NGO</option>
+                        <option value="Private Individual">Private Individual</option>
+                        <option value="Other Organization">Other Organization</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="organizationName">Organization Name *</label>
+                    <input type="text" id="organizationName"
+                           placeholder="Eg.: Smart Readers Liberia, Inc"
+                           name="organization_name" maxlength="200" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registrationNumber">Business Registration Number</label>
+                    <input type="text" id="registrationNumber"
+                           placeholder="Eg.: 495233"
+                           name="registration_number" maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactPerson">Contact Person *</label>
+                    <input type="text" id="contactPerson"
+                           placeholder="Eg.: John T. Gull"
+                           name="contact_person" maxlength="150" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="Eg.: name@example.com"
+                               maxlength="254" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="Eg.: +231"
+                               maxlength="40" required>
+                    </div>
+                </div><!-- end .form-row (was missing) -->
+
+                <div class="form-group">
+                    <label for="location">Organization Location *</label>
+                    <input type="text" id="location" name="location"
+                           maxlength="200"
+                           placeholder="Eg.: Nyhen Town, District #1, Montserrado County, Liberia" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="partnershipType">Partnership Area *</label>
+                    <select id="partnershipType" name="partnership_area" required>
+                        <option value="">Select partnership area</option>
+                        <option value="Teacher Literacy Development Training">Teacher Literacy Development Training (Reading &amp; Handwriting Strategies)</option>
+                        <option value="Learners Reading Level Assessment">Learners Reading Level Assessment</option>
+                        <option value="Adult Literacy">Adult Literacy Training</option>
+                        <option value="Project Proposal Development">Project Proposal Development</option>
+                        <option value="WASSCE/WAEC Preparation Tutorial">WASSCE/WAEC Preparation Tutorial</option>
+                        <option value="College and Career Readiness">College and Career Readiness</option>
+                        <option value="Digital Literacy Training">Digital Literacy Training</option>
+                        <option value="Environmental Education">Environmental Education</option>
+                        <option value="Financial Literacy Training">Financial Literacy Training</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="partnershipTitle">Partnership Title *</label>
+                    <input type="text" id="partnershipTitle"
+                           placeholder="Eg., School Literacy Development Partnership"
+                           name="partnership_title" maxlength="200" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="partnershipDetails">
+                        Describe Your Partnership Request *
+                    </label>
+                    <textarea id="partnershipDetails"
+                              name="partnership_details"
+                              rows="5" maxlength="10000"
+                              placeholder="Briefly describe the proposed partnership, its objectives, targeted beneficiaries, planned activities, expected outcomes."
+                              required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="supportingDocuments">
+                        Supporting Documents *
+                    </label>
+                    <input type="file"
+                           id="supportingDocuments"
+                           name="supporting_documents"
+                           accept=".pdf,.doc,.docx"
+                           multiple required>
+                    <small>
+                        Upload a summary of your organizational profile, business registration document,
+                        partnership proposal, or other relevant files. PDF and Word documents
+                        are accepted. Keep the total file size below 4 MB.
+                    </small>
+                </div>
+
+                <div class="form-group consent-group">
+                    <label>
+                        <input type="checkbox" name="declaration"
+                               value="Confirmed" required>
+                        I confirm that the information is accurate and that I am
+                        authorized to submit this application.
+                    </label>
+                </div>
+
+                <button type="submit" class="partnership-submit">
+                    Submit Partnership Request
+                </button>
+
+                <p id="partnershipMessage" role="status" aria-live="polite"></p>
+            </form>
+        </div><!-- end .partnership-form-card (was missing) -->
+
+        <div class="partnership-footer">
+            <h3>Partnership Review and Approval</h3>
+            <p>
+                Every request must pass through the SRL review process.
+                Only the technical review team can grant final approval.
+                Submission does not guarantee approval.
+            </p>
+        </div>
+    </div><!-- end .partnership-container -->
+</section>
+<!-- END SRL SCHOOL PARTNERSHIP PORTAL -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-col">
+            <h3>Locate us</h3>
+            <p>
+            MC Caro Street, Block D,<br>
+            New Israel Community, <br>
+            Johnsoville Township, Montserrado County, <br>
+            Republic of Liberia
+            <p><strong>Email:</strong><a href="mailto:smartreadersnet@gmail.com">smartreadersnet@gmail.com</a></p>
+            <p><strong>Phone: </strong>+231 889-559-762/773-223-483</p>
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Our Programs</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="partnership_portal.html">Request a Partnership</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                 
+            </ul>
+        </div>
+
+            <!-- Social Media -->
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/SmartReadersLiberia" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.linkedin.com/company/smartreadersliberia" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.youtube.com/@SmartReadersLiberiaInc" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+
+</div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Smart Readers Liberia, Inc. | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Menu and slideshow scripts -->
+<script>
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+
+function toggleSubMenu(){
+    document.getElementById("programMenu").classList.toggle("active");
+}
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function changeSlide(){
+    slides[index].classList.remove("active");
+    index++;
+    if(index >= slides.length){
+        index = 0;
+    }
+    slides[index].classList.add("active");
+}
+
+setInterval(changeSlide, 5000);
+</script>
+
+<!-- Form submission script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("srlPartnershipForm");
+    const message = document.getElementById("partnershipMessage");
+    const fileInput = document.getElementById("supportingDocuments");
+    const submitButton = form?.querySelector('button[type="submit"]');
+
+    if (!form || !message || !fileInput || !submitButton) {
+        return;
+    }
+
+    const endpoint = "https://formsubmit.app/f/3vntgjtj3t";
+    const maxTotalSize = 4 * 1024 * 1024;
+    const allowedExtension = /\.(pdf|doc|docx)$/i;
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        if (!form.reportValidity()) {
+            return;
+        }
+
+        const files = Array.from(fileInput.files);
+
+        if (files.length === 0) {
+            message.textContent =
+                "Please attach at least one supporting document.";
+            return;
+        }
+
+        let totalSize = 0;
+
+        for (const file of files) {
+            totalSize += file.size;
+
+            if (!allowedExtension.test(file.name)) {
+                message.textContent =
+                    "Only PDF, DOC, and DOCX documents are accepted.";
+                return;
+            }
+        }
+
+        if (totalSize > maxTotalSize) {
+            message.textContent =
+                "Your files exceed 4 MB in total. Please reduce their size.";
+            return;
+        }
+
+        const spamField = document.getElementById("srlWebsite");
+
+        if (spamField && spamField.value.trim() !== "") {
+            message.textContent =
+                "The submission could not be processed.";
+            return;
+        }
+
+        const email = document.getElementById("email").value.trim();
+        const replyTo = document.getElementById("srlReplyTo");
+
+        if (replyTo) {
+            replyTo.value = email;
+        }
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+        message.textContent = "Sending your application. Please wait.";
+
+        try {
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json"
+                },
+                body: new FormData(form)
+            });
+
+            const result = await response.json();
+
+            if (!response.ok || result.ok !== true) {
+                throw new Error(
+                    result.error || "Submission was not confirmed."
+                );
+            }
+
+            message.textContent =
+                "Your partnership request was submitted successfully. " +
+                "SRL will review it and contact you.";
+
+            form.reset();
+
+        } catch (error) {
+            console.error("SRL submission error:", error);
+
+            message.textContent =
+                "We could not confirm your submission. Please try again " +
+                "or contact smartreadersnet@gmail.com.";
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent =
+                "Submit Partnership Request";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
